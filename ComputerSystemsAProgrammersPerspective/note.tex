@@ -1,0 +1,47 @@
+\documentclass{claynote}
+\voiddef
+{
+    \titlenote{Any Note}
+    \titlecn{深入理解计算机系统 \\\ \\\ 第三版}
+    \titleen{Computer Systems \\\ A Programmer's Perspective \\\ \\\ Third Edition}
+}
+\begin{document}
+
+\begin{void}
+{
+    % for test
+    % \maketitle%
+    % \thispagestyle{empty}%
+    % \cleardoublepage%
+    % \pagenumbering{Roman}%
+    % \setcounter{secnumdepth}{-2}%
+    % \tableofcontents%
+    % test end
+
+    \begin{pre}
+        \subimport{preface/}{preface}
+        \subimport{introduction/}{introduction}
+    \end{pre}
+
+    \begin{body}
+        \subimport{chapter01/}{chapter}
+        \subimport{chapter02/}{chapter}
+        \subimport{chapter03/}{chapter}
+        \subimport{chapter04/}{chapter}
+        \subimport{chapter05/}{chapter}
+        \subimport{chapter06/}{chapter}
+        \subimport{chapter07/}{chapter}
+        \subimport{chapter08/}{chapter}
+        \subimport{chapter09/}{chapter}
+        \subimport{chapter10/}{chapter}
+        \subimport{chapter11/}{chapter}
+        \subimport{chapter12/}{chapter}
+    \end{body}
+
+    \begin{append}
+        \subimport{appendA/}{append}
+    \end{append}
+}
+\end{void}
+
+\end{document}
