@@ -95,6 +95,18 @@
 \newthm{example}{例题}
 \newthm{esolution}{解}
 
+% define special
+\newtheorem*{@sidenote}{旁注}
+\NewDocumentEnvironment{sidenote}{o}
+{
+    \IfNoValueTF{#1}
+    {\begin{@sidenote}\mbox{}\par}
+    {\begin{@sidenote}[#1]\mbox{}\par}
+}
+{    
+    \end{@sidenote}
+}
+
 % defined emphasis
 \def\emreg#1{\textit{#1}}
 \def\emspe#1{\textit{#1}}
@@ -108,8 +120,8 @@
 \def\style#1{\textit{风格：}#1}
 \def\pro#1{\textit{进阶：}#1}
 \def\extension#1{\textit{扩展：}#1}
-\def\nameparaph#1{\textbf\large{#1:}}
-\def\paraph#1{\textbf{\large{#1}}\par}
+\def\nameparaph#1#2{\textbf{\Large{#1:#2}}\par}
+\def\paraph#1{\textbf{\Large{#1}}\par}
 
 % space
 \def\vs{\vskip 3ex}
@@ -119,10 +131,6 @@
 \def\itemcaption#1{\item \emspe{#1}\par}
 
 % some defines
-\def\codeTRUE{\emcode{TRUE}}
-\def\codeFALSE{\emcode{FALSE}}
-\def\codetrue{\emcode{true}}
-\def\codefalse{\emcode{false}}
 \def\rmnum#1{\romannumeral#1}
 \def\Rmnum#1{\uppercase\expandafter{\romannumeral#1}}
 
