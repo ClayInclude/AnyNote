@@ -143,8 +143,8 @@
 \def\style#1{\textit{风格：}#1}
 \def\pro#1{\textit{进阶：}#1}
 \def\extension#1{\textit{扩展：}#1}
-\def\nameparaph#1#2{\textbf{\Large{#1:#2}}\par}
-\def\paraph#1{\textbf{\Large{#1}}\par}
+\def\nameparaph#1#2{\textbf{\large{#1:#2}}\par}
+\def\paraph#1{\textbf{\large{#1}}\par}
 
 % space
 \def\vs{\vskip 3ex}
