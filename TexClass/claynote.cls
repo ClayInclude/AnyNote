@@ -93,6 +93,7 @@
 \newthm{defines}{定义}
 \newthm{codelist}{代码}
 \newthm{example}{例题}
+\newthm{practice}{习题}
 \newthm{esolution}{解}
 
 % define special
@@ -105,6 +106,28 @@
 }
 {    
     \end{@sidenote}
+}
+
+\newtheorem{@examples}{例题}[section]
+\NewDocumentEnvironment{examples}{o}
+{
+    \IfNoValueTF{#1}
+    {\begin{@examples}\mbox{}\par}
+    {\begin{@examples}[#1]\mbox{}\par}
+}
+{    
+    \end{@examples}
+}
+
+\newtheorem*{@practices}{习题}[section]
+\NewDocumentEnvironment{practices}{o}
+{
+    \IfNoValueTF{#1}
+    {\begin{@practices}\mbox{}\par}
+    {\begin{@practices}[#1]\mbox{}\par}
+}
+{    
+    \end{@practices}
 }
 
 % defined emphasis
