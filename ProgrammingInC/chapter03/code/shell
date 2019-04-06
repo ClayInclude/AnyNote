@@ -1,0 +1,9 @@
+$ cd ./ProgrammingInC/chapter03/code
+$ clang example01
+
+$ ./a.out
+Programming is fun.
+
+$ clang example01 -o example01.exe
+$ ./example01.exe
+Programming is fun.
